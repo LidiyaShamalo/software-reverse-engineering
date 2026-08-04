@@ -1,0 +1,12 @@
+LEARN THE FIRST FEW TRICKS BY DEIBIZ_XXL #1
+A Little Comparison...
+
+As the name says, this crackme is intended for people who begin to crack. There are many reasons that have made me coding this crackme. I'm a proud user of crackmes.de and I think that even the begginer-rated crackmes are too hard for people that is starting, so I'm going to code some VERY VERY EASY Crackmes so the people can start doing her own work. The crackmes of this series are going to be each time more difficult. Now I'm going to explain the goals of this crackme.
+
+(1) Find the valid password without patching... (The second crackme will be related with patching jumps).
+(2) Patch the XXXXX... so the program show your name.
+
+When you have accomplished this two goals you sholud try to write a short tutorial about how have you done it and send it to me [deibiz_xxl@hotmail.com] and to crackmes.de.
+I hope this crackme will be useful for people that is starting to learn to crack but i know that it won't be so useful for experienced crackers, so please, if you consider yourself an experienced cracker, don't make comments like "This is shit". Thankyou.
+
+
