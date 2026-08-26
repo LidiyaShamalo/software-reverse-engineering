@@ -1,0 +1,12 @@
+# Временные базы данных IDA Pro
+*.id0
+*.id1
+*.id2
+*.i64
+*.exe.id0
+*.exe.id1
+*.exe.nam
+*.exe.til
+*.nam
+*.til
+*.til/

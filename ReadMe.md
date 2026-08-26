@@ -4,7 +4,7 @@
 
 ## 📂 Структура репозитория
 
-Репозиторий структурирован по целевым задачам. Внутри каждой директории находятся оригинальные бинарники, файлы базы данных IDA (`.id0`, `.id1`, `.id2`, `.nam`, `.til`), отчеты и приложения.
+Репозиторий структурирован по целевым задачам. Внутри каждой директории находятся оригинальные бинарники, отчеты и приложения.
 
 ```text
 .
@@ -20,24 +20,45 @@
 │
 ├── 1_crackme1_by_midi/
 │   └── midicrkme1/
-│       ├── crackme.exe      
+│       ├── crackme.exe              # Исходный исполняемый файл
 │       ├── crackme_mod.exe          # Пропатченная версия
 │       ├── report.md                # Технический отчет
-│       └── report_appendices/
+│       └── report_appendices/       # Скриншоты анализа для отчета
+│
+├── 1_linux_crackme_02 by cyrex/
+│   └── crackme_02/
+│       ├── crackme.exe              # Исходный исполняемый файл
+│       ├── report_linux.md          # Технический отчет по решению
+│       └── report_appendices/       # Скриншоты анализа для отчета
+│
+├── 1_linux_crackme by cyrex/
+│   └── crackme_01/
+│       ├── crackme.exe              # Исходный исполняемый файл
+│       ├── report_linux.md          # Технический отчет по решению
+│       └── report_appendices/       # Скриншоты анализа для отчета
+│
+├── 1_nts_crackme3_by_cyclops/
+│   └── NTS-Crackme3/
+│       ├── Crackme3.exe             # Исходный исполняемый файл
+|       ├── loader.py                # Скрипт для динамической модификации программы в памяти при запуске
+|       ├── patcher.py               # Скрипт для статической модификации программы
+│       ├── report.md                # Технический отчет по решению
+│       └── report_appendices/       # Скриншоты анализа для отчета
 │
 ├── find_key/
 │   └── zeromakespipi/
-│       ├── ZeroMakesPiPi.exe
+│       ├── ZeroMakesPiPi.exe        # Исходный исполняемый файл
 │       ├── report.md                # Технический отчет
 │       ├── mfc71/                   # Необходимые зависимости (DLL)
-│       └── report_appendices/
+│       └── report_appendices/       # Скриншоты анализа для отчета
 │
 └── LTFFT_1/
     ├── LTFFT1.exe                   # Пропатченная версия
-    ├── LTFFT.exe
+    ├── LTFFT.exe                    # Исходный исполняемый файл
     ├── report.md                    # Технический отчет
-    └── report_appendices/
+    └── report_appendices/           # Скриншоты анализа для отчета
 ```
+
 
 ## 📊 Список решенных задач
 
@@ -47,6 +68,10 @@
 | [`1_crackme1_by_midi`](./1_crackme1_by_midi/midicrkme1/report.md) | Windows / x86 | IDA Pro | 🟩 Cracked | Изучение управляющей логики, Patching |
 | [`find_key` (ZeroMakesPiPi)](./find_key/zeromakespipi/report.md) | Windows / x86 (MFC) | IDA Pro | 🟩 Cracked | Анализ MFC-обработчиков кнопок |
 | [`LTFFT_1`](./LTFFT_1/report.md) | Windows / x86 | IDA Pro | 🟩 Cracked | Обход условных переходов, Поиск строк |
+| [`1_linux_crackme_02_by_cyrex`](./1_linux_crackme_02_by_cyrex/report_linux.md) | Linux / x64 | IDA Pro | 🟩 Cracked | Hardcoded Key (Зашитый ключ), Специфические зависимости (Файловый триггер), Обнаружение Anti-Debugging (ptrace) |
+| [`1_linux_crackme_by_cyrex`](./1_linux_crackme_by_cyrex/report_linux.md) | Linux / x64 | IDA Pro | 🟩 Cracked | Hardcoded Key (Зашитый ключ), Изучение управляющей логики, Статический анализ строк |
+| [`1_nts_crackme3_by_cyclops`](./1_nts_crackme3_by_cyclops/report.md) | Windows / x86 | IDA Pro | 🟩 Cracked | Переполнение буфера (массива), Контроль целостности, Анализ условий (XREFs), Статический патчинг, Динамический Runtime-инжект (WinAPI) |
+
 
 ## 🛠️ Используемый инструментарий
 
